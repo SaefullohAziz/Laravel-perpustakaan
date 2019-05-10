@@ -19,7 +19,7 @@ class CreateTablePeminjaman extends Migration
             $table->date('tanggal_pinjam');
             $table->string('id_buku', 3)->index();
             $table->date('tanggal_kembali');
-            $table->integer('biaya')->null();
+            $table->integer('biaya')->nullable();
             $table->string('status');
             $table->timestamps();
         });
